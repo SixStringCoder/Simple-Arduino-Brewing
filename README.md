@@ -25,6 +25,6 @@ Using an Arduino sketch to control a BIAB system, with minimal hardware and no c
   A more permenant setup can be made by creating a circuit layout using software such as Eagle, and paying to have it made.  It should be easier, at least starting out, to connect everything with dupont (jumper wires) and a solderless breadboard.  The breadboard can be attached to something along with the Arduino, to keep it stable while brewing.  Velcro, screws, be creative.  
   
   
-  ### Setup
+  ### Arduino 
   
     The first thing to do is download and setup the Arduino IDE.  
