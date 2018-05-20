@@ -20,4 +20,4 @@ Using an Arduino sketch to control a BIAB system, with minimal hardware and no c
 
   This hardware list only covers what you'll need for the electronic control, the 220v stuff (like an SSR, heating element etc etc) are not included in the list.  You're on your own for that.  There are many resources online to learn about those things though.  A basic setup would include something like a box or panel to mount everything in, an SSR, 220V LED indiator light, electrical wire and various grommets and plugs.  Your heating element will need some waterproof surrounding where the electrical connection is, and for your temp sensor you may wish to use a thermowell.  Again, you're on your own for this!  These are things that every electric brewing setup requires, at a minimum.  
 
-[alt text](bobcat.png)
+(bobcat_diagram.png)
