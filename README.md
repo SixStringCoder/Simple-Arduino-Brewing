@@ -32,6 +32,8 @@ Using an Arduino sketch to control a BIAB system, with minimal hardware and no c
 
 Next, is to download the sketch.  On the [Simple-Arduino-Brewing Project Page](https://github.com/SixStringCoder/Simple-Arduino-Brewing) click on "Clone or download" and select "Download zip" from the menu as shown below.
 
+![Screenshot 2](bobcat2.png)
+
 
 
 
