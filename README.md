@@ -28,4 +28,4 @@ Using an Arduino sketch to control a BIAB system, with minimal hardware and no c
   ### Arduino Setup
   The first thing to do, is download and install the Arduino IDE.  All of the information is on the [Arduino Website](https://www.arduino.cc/).  There are also many youtube videos on the subject.  If you have purchased a generic Arduino, like the ones on ebay you may need to install a different set of drivers, most likely the [CH340](https://sparks.gogo.co.nz/ch340.html).  Once you have completed this check to see if the Arduino is listed as seen in the screenshot below.  
  
-![Screenshot 1](Bobcat1.png)
+![Screenshot 1](bobcat1.png)
