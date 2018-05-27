@@ -34,6 +34,10 @@ Next, is to download the sketch.  On the [Simple-Arduino-Brewing Project Page](h
 
 ![Screenshot 2](bobcat2.png)
 
+Use your favorite zipper to extract the file.  I suggest [Winrar](https://www.rarlab.com/download.htm?).  Open the Arduino IDE and then open the sketch from the files you just extracted.  
 
+![Screenshot 3](bobcat3.png)
+
+Now that you have the sketch open, feel free to look around.  Even if you do not have any programming experience, the comments in the code may provide you with some clues as to what's going on.  You do not need to understand any of the code in order to upload and use this sketch!  If, you are learning to program, I invite you to look at the code and comments, try to understand it.  Make changes to it even.  If you screw it up, just download the sketch again.  
 
 
