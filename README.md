@@ -38,6 +38,8 @@ Use your favorite zipper to extract the file.  I suggest [Winrar](https://www.ra
 
 ![Screenshot 3](bobcat3.png)
 
-Now that you have the sketch open, feel free to look around.  Even if you do not have any programming experience, the comments in the code may provide you with some clues as to what's going on.  You do not need to understand any of the code in order to upload and use this sketch!  If, you are learning to program, I invite you to look at the code and comments, try to understand it.  Make changes to it even.  If you screw it up, just download the sketch again.  
+Now that you have the sketch open, feel free to look around.  A "sketch" is the name for an Arduino program.  Even if you do not have any programming experience, the comments in the code may provide you with some clues as to what's going on.  You do not need to understand any of the code in order to upload and use this sketch!  If, you are learning to program, I invite you to look at the code and comments, try to understand it.  Make changes to it even.  If you screw it up, just download the sketch again.  The name of the file you're looking for, is Bobcat2.ino.  The other files you download and extracted you should not need.  You may be prompted to create a folder for the sketch with the same name, if so click yes.
+
+The last step before uploading is to get the libraries that the sketch requires.  A library is a compilation of code designed to solve a specfic problem, that has been packaged up for easy use by large groups of people.  
 
 
