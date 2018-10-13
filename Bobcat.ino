@@ -41,13 +41,13 @@ PID myPID(&Input, &Output, &Setpoint,2,5,1, DIRECT);
 
 //This variable sets the number of loops the mash function's main while loop will cycle through before updating the serial monitor with new data
 //Setting it faster just speeds up how fast the info is displayed but doesn't have any effect on how the controller is actually working
-int const mash_loop_speed = 2000;
+int const mash_loop_speed = 10000;
 //same thing as above but for the boil
-int const boil_loop_speed = 2500;
+int const boil_loop_speed = 10000;
 //same for mashout
-int const mashout_loop_speed = 3000;
+int const mashout_loop_speed = 10000;
 //same for temp only
-int const temp_only_loop_speed = 5000;
+int const temp_only_loop_speed = 10000;
 
 //mashout temp is a constant value
 const int mashout_temp = 170;
@@ -144,7 +144,8 @@ bool mash_bool = true;
 Setpoint = 0;
 
 //to display temp to user
-int display_pid;
+float display_pid;
+int display_pid_converted;
 
 //Mash splash screen
   Serial.println("Mash/Strike Selected");
@@ -175,9 +176,9 @@ int display_pid;
     while(mash_bool) {
       sensors.requestTemperatures();
       delay(10);
-      sensors.getTempFByIndex(0);
-      delay(10);
       Input = sensors.getTempFByIndex(0);
+      delay(10);
+      // taking this out for now Input = sensors.getTempFByIndex(0);
       myPID.Compute();
       analogWrite(3,Output);
       delay(mash_loop_speed);
@@ -188,7 +189,8 @@ int display_pid;
       Serial.print("\nPID: ");
        display_pid = Output/255;
       display_pid = display_pid * 100;
-      Serial.print(display_pid);
+      display_pid_converted = display_pid;
+      Serial.print(display_pid_converted);
       Serial.print("%");
           if(Serial.available() > 0) {
             if(Serial.parseInt() == 0){
@@ -255,9 +257,9 @@ void boil() {
      //only display every few seconds
       delay(boil_loop_speed);
       sensors.requestTemperatures();
-      delay(10);
+      delay(30);
       sensors.getTempFByIndex(0);
-      delay(10);
+      delay(30);
       temp_display = sensors.getTempFByIndex(0);
       analogWrite(3, pid_level);
       Serial.print("\nBoil Mode");
